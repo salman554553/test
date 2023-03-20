@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORM</title>
+    <link rel="icon" href="logo.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <!-- This is normal text form -->
+      <div>
+        <label for="firstname">First Name:</label> <br />
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="First Name"
+        />
+      </div>
+      <div>
+        <label for="midname">Middle Name:</label><br />
+        <input type="text" id="midname" name="midname" placeholder="Mid Name" />
+      </div>
+      <!-- This is normal text form -->
+      <div>
+        <label for="lastname">Last Name:</label> <br />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Last Name"
+        />
+      </div>
+      <!-- This is normal text form -->
+      <div style="font-size: larger">
+        <label for="age">Your Age</label> <br />
+        <input type="number" name="age" id="age" min="13" max="40" step="1" />
+      </div>
+      <!-- This box defines number -->
+      <div>
+        <input type="submit" value="Register" />
+      </div>
+      <div>
+        <label for="skills">Your Skills</label>
+        <input type="checkbox" id="skills" name="html" required />HTML
+        <input type="checkbox" id="skills" name="css" />CSS
+        <input type="checkbox" id="skills" name="py" />Python
+      </div>
+      <br />
+      <div class="_gender">
+        <!-- if the name"" is same then the checkbox will select just one options -->
+        <label class="lbl" for="gender">Select Gender</label>
+        <input
+          type="radio"
+          id="gender"
+          value="male"
+          name="gender"
+          class="gn"
+        />Male
+        <input type="radio" id="gender" value="male" name="gender" />Female
+        <input type="radio" id="gender" value="male" name="gender" />Other
+      </div>
+      <br />
+
+      <!-- This label is for date input -->
+      <div>
+        <label for="date">Date of birth</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <br />
+      <div>
+        <label for="file">Upload moss</label>
+        <input type="file" id="file" name="file" required />
+      </div>
+      <br />
+      <div>
+        <label for="country">Which country?</label>
+        <select name="country" id="country">
+          <option value="bd">BD</option>
+          <option value="ind">IND</option>
+          <option value="pak">PAK</option>
+        </select>
+      </div>
+      <div>
+        <label for="color">Choose color </label><br />
+        <input type="color" id="color" name="color" />
+        <input type="reset" />
+        <input type="password" name="color" id="color" />
+      </div>
+    </form>
+    <br />
+    <div id="i">
+      <button class="btn">Download mp3 File</button>
+    </div>
+  </body>
+</html>
